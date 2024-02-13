@@ -18,10 +18,11 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
   shadow: {
-    shadowColor: 'black',
-    shadowOffset: { width: 0, height: 2 },
-    shadowRadius: 2,
+    shadowColor: Platform.OS === 'ios' ? '#000000' + '30' : '#000000',
+    elevation: 25,
     shadowOpacity: 0.8,
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 4,
   },
   content: {
     borderRadius: 4,
